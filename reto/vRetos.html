@@ -8,11 +8,9 @@
     <link rel="stylesheet" href="./bootstrap.css/bootstrap.min.css">
     <link rel="stylesheet" href="./vRetos.css">
     <script src="./bootstrap.js/bootstrap.min.js" defer></script>
-    <script src="./vRetos.js" defer></script>
+    <script src="./vRetos.js" type="module" defer></script>
 </head>
 <body>
-    
-
     <div class="container">
         <div class="row text-center">
             <div class="col-12 mt-3">
@@ -21,8 +19,8 @@
         </div>
 
         <form action="">
-            <div class="row d-flex flex-column">
-                <div class="col-3  mt-3 miFormulario">
+            <div class="row ">
+                <div class="col-3  mt-3 miFormulario d-flex flex-column">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="prenda">
                         <label class="form-check-label" for="flexRadioDefault1">
@@ -36,7 +34,7 @@
                         </label>
                     </div>
                     <div class="form-floating">
-                        <input type="number" class="form-control mt-5 codigo" id="floatingInput" placeholder="Codigo">
+                        <input type="number" class="form-control mt-3 codigo" id="floatingInput" placeholder="Codigo">
                         <label for="floatingInput">Codigo</label>
                     </div>
                     <div class="form-floating">
@@ -73,35 +71,80 @@
                             placeholder="Descuento">
                         <label for="floatingInput">Descuento</label>
                     </div>
-
-                    <select class="form-select mt-3 seleccionPrenda" aria-label="Default select example">
+                    <p class="text-start mt-3">Seleccione el tipo de prenda a comprar.</p>
+                    <select class="form-select seleccionPrenda" aria-label="Default select example">
                         <option value="1">Vestido</option>
                         <option value="2">Pantalon</option>
+                        <option value="2">Mocho</option>
+                        <option value="2">Lloguer</option>
                         <option value="3">Camisa</option>
                         <option value="4">Buzo</option>
                         <option value="5">Esqueleto</option>
                         <option value="6">Blusa</option>
                     </select>
-
-                    <select class="form-select mt-3 tallaPrenda" aria-label="Default select example">
+                    <p class="text-start mt-3">Seleccione la talla de la prenda</p>
+                    <select class="form-select tallaPrenda" aria-label="Default select example">
                         <option value="1">S</option>
                         <option value="2">M</option>
                         <option value="3">L</option>
                         <option value="4">XL</option>
                         <option value="5">XXL</option>
                     </select>
+                    <p class="text-start mt-3">¿Se puede planchar?</p>
+                    <select class="form-select tallaPrenda" aria-label="Default select example">
+                        <option value="1">Si</option>
+                        <option value="2">No</option>
+                    </select>
+                    <p class="text-start mt-3">Seleccione el tipo de calzado a comprar.</p>
+                    <select class="form-select seleccionPrenda" aria-label="Default select example">
+                        <option value="1">Tenis</option>
+                        <option value="2">Botines</option>
+                        <option value="3">Botas</option>    
+                        <option value="4">Tacones</option>
+                        <option value="5">Sandalias</option>
+                        <option value="6">Pantuflas</option>
+                        <option value="6">Chagualos</option>
+                        <option value="6">Pisahuevos</option>
+                    </select>
 
+                    <p class="text-start mt-3">Seleccione la talla del calzado</p>
+                    <select class="form-select tallaCalzado" aria-label="Default select example">
+                        <option value="1">32</option>
+                        <option value="2">34</option>
+                        <option value="3">36</option>
+                        <option value="4">38</option>
+                        <option value="5">40</option>
+                        <option value="6">42</option>
+                    </select>
+                </div>
 
-
-
-                    <button type="button" id="agregar" class="btn btn-dark mt-5">Cargar</button>
-
-                    
+                <div class="col-9 mt-5">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                            <th scope="col">Numero de Productos</th>
+                            <th scope="col">Canditad de Prendas</th>
+                            <th scope="col">Solicitar a Proveedor</th>
+                            <th scope="col">Mas en bodega</th>
+                            <th scope="col">Mejor Ganancia</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabla">
+                        
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </form>
 
+        <button type="button" id="agregar" class="btn btn-dark mt-5 ms-5">Cargar</button>
+        <button type="button" id="agregar" class="btn btn-dark mt-5 ms-4">Estadistica</button>
 
-    </div>
+
+        <div class="row" id="tarjeta">
+
+        </div>
+
+    </div> <!-- Cierre del container-->
 </body>
 </html>
