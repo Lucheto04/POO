@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viernes de Pruebas</title>
+    <link rel="stylesheet" href="./bootstrap.css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vRetos.css">
+    <script src="./bootstrap.js/bootstrap.min.js" defer></script>
+    <script src="./vRetos.js" defer></script>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12 mt-3">
+                <h1>Formulario de Compras</h1>
+            </div>
+        </div>
+
+        <form action="">
+            <div class="row d-flex flex-column">
+                <div class="col-3  mt-3 miFormulario">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="prenda">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        Prenda.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="calzado" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        Calzado.
+                        </label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="number" class="form-control mt-5 codigo" id="floatingInput" placeholder="Codigo">
+                        <label for="floatingInput">Codigo</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" class="form-control mt-3 descripcion" id="floatingInput" placeholder="Descripción">
+                        <label for="floatingInput">Descripción</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="number" class="form-control pCompra" id="floatingInput"
+                            placeholder="Precio de Compra">
+                        <label for="floatingInput">Precio de Compra</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="number" class="form-control pVenta" id="floatingInput"
+                            placeholder="Precio de Venta">
+                        <label for="floatingInput">Precio de Venta</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="number" class="form-control cBodega" id="floatingInput"
+                            placeholder="Cantidad en Bodega">
+                        <label for="floatingInput">Cantidad en Bodega</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="number" class="form-control cMinima" id="floatingInput"
+                            placeholder="Cantidad Minima">
+                        <label for="floatingInput">Cantidad Minima</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="number" class="form-control cMaxima" id="floatingInput"
+                            placeholder="Cantidad Maxima">
+                        <label for="floatingInput">Cantidad Maxima</label>
+                    </div>
+                    <div class="form-floating mt-3">
+                        <input type="number" class="form-control descuento" id="floatingInput"
+                            placeholder="Descuento">
+                        <label for="floatingInput">Descuento</label>
+                    </div>
+
+                    <select class="form-select mt-3 seleccionPrenda" aria-label="Default select example">
+                        <option value="1">Vestido</option>
+                        <option value="2">Pantalon</option>
+                        <option value="3">Camisa</option>
+                        <option value="4">Buzo</option>
+                        <option value="5">Esqueleto</option>
+                        <option value="6">Blusa</option>
+                    </select>
+
+                    <select class="form-select mt-3 tallaPrenda" aria-label="Default select example">
+                        <option value="1">S</option>
+                        <option value="2">M</option>
+                        <option value="3">L</option>
+                        <option value="4">XL</option>
+                        <option value="5">XXL</option>
+                    </select>
+
+
+
+
+                    <button type="button" id="agregar" class="btn btn-dark mt-5">Cargar</button>
+
+                    
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</body>
+</html>

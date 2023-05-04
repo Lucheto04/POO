@@ -59,15 +59,12 @@ const myObject = {
     gender : 'male',
     profession : 'optician'
 }
-
 localStorage.setItem('myObject', JSON.stringify(myObject));
 console.log(localStorage.getItem('myObject'));
 
 let newObject = localStorage.getItem('myObject');
 console.log(JSON.parse(newObject));
 */
-
-
 
 
 

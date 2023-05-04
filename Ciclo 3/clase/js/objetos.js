@@ -53,10 +53,11 @@
 // 
 /* LO MISMO DE ARRIBA PERO CON CLASES */
 
+/*
 class CuentaCorriente {
 
     /* ESTATICOS */
-
+/*
     static cantidad = 0;
     constructor(numero, nombre, saldo) {
         this._numero = numero;
@@ -66,6 +67,7 @@ class CuentaCorriente {
         ++CuentaCorriente.cantidad;
     }
     /* SETTER / GETTER */
+/*
     set numero(nuevoNumero) {
         this._numero = nuevoNumero;
     }
@@ -88,6 +90,7 @@ class CuentaCorriente {
         return this._saldo;
     }
     /* METODOS */
+/*
     depositar(monto) {
         this._saldo += monto;
         return true;
@@ -108,6 +111,7 @@ class CuentaCorriente {
         return "Campus Bank"
     }
 }
+
 // const ctaCorrA = new CuentaCorriente(1234, "Juan", 350000);
 // const ctaCorrB = new CuentaCorriente(9876, "Maria", 450600);
 // console.log(ctaCorrA.cantidad);
@@ -219,7 +223,7 @@ function agregar() {
     cantidadB = document.querySelector(".cantidadB").value;
     cantidadM = document.querySelector(".cantidadM").value;
     const datosProducto = new Producto(codigo, precio, cantidadB, cantidadM)
-    bodega.push([datosProducto]);
+    bodega.push(datosProducto);
 
 
     if (this.__cantidadBodega < this.__cantidadMinima) {
