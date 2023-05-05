@@ -11,7 +11,6 @@
     <script src="./vRetos.js" type="module" defer></script>
 </head>
 <body>
-    <h1 id="aaa">aaa</h1>
     <div class="container">
         <div class="row text-center">
             <div class="col-12 mt-3">
@@ -23,103 +22,120 @@
             <div class="row ">
                 <div class="col-3  mt-3 miFormulario d-flex flex-column">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="prenda">
+                        <input class="form-check-input prenda" type="radio" name="flexRadioDefault" id="prenda">
                         <label class="form-check-label" for="flexRadioDefault1">
                         Prenda.
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="calzado" checked>
+                        <input class="form-check-input calzado" type="radio" name="flexRadioDefault" id="calzado" checked>
                         <label class="form-check-label" for="flexRadioDefault2">
                         Calzado.
                         </label>
                     </div>
                     <div class="form-floating">
                         <input type="number" class="form-control mt-3 codigo" id="floatingInput" placeholder="Codigo">
-                        <label for="floatingInput">Codigo</label>
+                        <label for="floatingInput" class="textoCodigo">Codigo</label>
                     </div>
                     <div class="form-floating">
                         <input type="text" class="form-control mt-3 descripcion" id="floatingInput" placeholder="Descripción">
-                        <label for="floatingInput">Descripción</label>
+                        <label for="floatingInput" class="textoDescripcion">Descripción</label>
                     </div>
                     <div class="form-floating mt-3">
                         <input type="number" class="form-control pCompra" id="floatingInput"
                             placeholder="Precio de Compra">
-                        <label for="floatingInput">Precio de Compra</label>
+                        <label for="floatingInput" class="textoPrecioCompra">Precio de Compra</label>
                     </div>
                     <div class="form-floating mt-3">
                         <input type="number" class="form-control pVenta" id="floatingInput"
                             placeholder="Precio de Venta">
-                        <label for="floatingInput">Precio de Venta</label>
+                        <label for="floatingInput" class="textoPrecioVenta">Precio de Venta</label>
                     </div>
                     <div class="form-floating mt-3">
                         <input type="number" class="form-control cBodega" id="floatingInput"
                             placeholder="Cantidad en Bodega">
-                        <label for="floatingInput">Cantidad en Bodega</label>
+                        <label for="floatingInput" class="textoCantidadBodega">Cantidad en Bodega</label>
                     </div>
                     <div class="form-floating mt-3">
                         <input type="number" class="form-control cMinima" id="floatingInput"
                             placeholder="Cantidad Minima">
-                        <label for="floatingInput">Cantidad Minima</label>
+                        <label for="floatingInput" class="TextoCantidadMinima">Cantidad Minima</label>
                     </div>
                     <div class="form-floating mt-3">
                         <input type="number" class="form-control cMaxima" id="floatingInput"
                             placeholder="Cantidad Maxima">
-                        <label for="floatingInput">Cantidad Maxima</label>
+                        <label for="floatingInput" class="textoCantidadMaxima">Cantidad Maxima</label>
                     </div>
                     <div class="form-floating mt-3">
                         <input type="number" class="form-control descuento" id="floatingInput"
                             placeholder="Descuento">
                         <label for="floatingInput">Descuento</label>
                     </div>
-                    <p class="text-start mt-3">Seleccione el tipo de prenda a comprar.</p>
-                    <select class="form-select seleccionPrenda" aria-label="Default select example">
-                        <option value="1">Vestido</option>
-                        <option value="2">Pantalon</option>
-                        <option value="2">Mocho</option>
-                        <option value="2">Lloguer</option>
-                        <option value="3">Camisa</option>
-                        <option value="4">Buzo</option>
-                        <option value="5">Esqueleto</option>
-                        <option value="6">Blusa</option>
-                    </select>
-                    <p class="text-start mt-3">Seleccione la talla de la prenda</p>
-                    <select class="form-select tallaPrenda" aria-label="Default select example">
-                        <option value="1">S</option>
-                        <option value="2">M</option>
-                        <option value="3">L</option>
-                        <option value="4">XL</option>
-                        <option value="5">XXL</option>
-                    </select>
-                    <p class="text-start mt-3">¿Se puede planchar?</p>
-                    <select class="form-select tallaPrenda" aria-label="Default select example">
-                        <option value="1">Si</option>
-                        <option value="2">No</option>
-                    </select>
-                    <p class="text-start mt-3">Seleccione el tipo de calzado a comprar.</p>
-                    <select class="form-select seleccionPrenda" aria-label="Default select example">
-                        <option value="1">Tenis</option>
-                        <option value="2">Botines</option>
-                        <option value="3">Botas</option>    
-                        <option value="4">Tacones</option>
-                        <option value="5">Sandalias</option>
-                        <option value="6">Pantuflas</option>
-                        <option value="6">Chagualos</option>
-                        <option value="6">Pisahuevos</option>
-                    </select>
+                    <div class="seleccionPrenda">
+                        <p class="text-start mt-3">Seleccione el tipo de prenda a comprar.</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">Vestido</option>
+                            <option value="2">Pantalon</option>
+                            <option value="2">Mocho</option>
+                            <option value="2">Lloguer</option>
+                            <option value="3">Camisa</option>
+                            <option value="4">Buzo</option>
+                            <option value="5">Esqueleto</option>
+                            <option value="6">Blusa</option>
+                        </select>
+                    </div>
 
-                    <p class="text-start mt-3">Seleccione la talla del calzado</p>
-                    <select class="form-select tallaCalzado" aria-label="Default select example">
-                        <option value="1">32</option>
-                        <option value="2">34</option>
-                        <option value="3">36</option>
-                        <option value="4">38</option>
-                        <option value="5">40</option>
-                        <option value="6">42</option>
-                    </select>
+
+                    <div class="tallaPrenda">
+                        <p class="text-start mt-3">Seleccione la talla de la prenda</p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option value="1">S</option>
+                            <option value="2">M</option>
+                            <option value="3">L</option>
+                            <option value="4">XL</option>
+                            <option value="5">XXL</option>
+                        </select>
+                    </div>
+
+                    <div class="planchar">
+                        <p class="text-start mt-3">¿Se puede planchar?</p>
+                        <select class="form-select " aria-label="Default select example">
+                            <option value="1">Si</option>
+                            <option value="2">No</option>
+                        </select>
+                    </div>
+
+
+                    <div class="seleccionCalzado">
+                        <p class="text-start mt-3">Seleccione el tipo de calzado a comprar.</p>
+                        <select class="form-select " aria-label="Default select example">
+                            <option value="1">Tenis</option>
+                            <option value="2">Botines</option>
+                            <option value="3">Botas</option>    
+                            <option value="4">Tacones</option>
+                            <option value="5">Sandalias</option>
+                            <option value="6">Pantuflas</option>
+                            <option value="6">Chagualos</option>
+                            <option value="6">Pisahuevos</option>
+                        </select>
+                    </div>
+
+                    <div class="tallaCalzado">
+                        <p class="text-start mt-3">Seleccione la talla del calzado</p>
+                        <select class="form-select " aria-label="Default select example">
+                            <option value="1">32</option>
+                            <option value="2">34</option>
+                            <option value="3">36</option>
+                            <option value="4">38</option>
+                            <option value="5">40</option>
+                            <option value="6">42</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="col-9 mt-5">
+
+
+                <div class="col-9 mt-5"> <!-- Inicio de la tabla -->
                     <table class="table table-hover">
                         <thead>
                             <tr>
