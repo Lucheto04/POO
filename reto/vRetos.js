@@ -24,3 +24,9 @@ let tipoProducto = function () {
     }
 }
 
+
+
+
+// window.addEventListener("load", function () {
+//     document.getElementById("carta").addEventListener("change", tipoProducto());
+// });

@@ -205,7 +205,7 @@ class Producto {
     get cantidadM() {
         this.__cantidadMinima
     }
-    
+
     solPedido() {
         if (this.__cantidadBodega < this.__cantidadMinima) {
             return true;
