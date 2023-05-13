@@ -1,0 +1,20 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "nombre": "Desarrollo de Salud"
+    },
+    {
+      "id": "2",
+      "nombre": "Homopendejus"
+    },
+    {
+      "id": "3",
+      "nombre": "Bellisiuz"
+    }
+  ],
+  "moduloskills": [],
+  "teams": [],
+  "reclutas": [],
+  "evaluacion": []
+}
